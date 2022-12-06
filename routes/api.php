@@ -15,7 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/getproducts', 'App\Http\Controllers\Api\ProductsController@getproducts');
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/getproductsanalytics', 'App\Http\Controllers\Api\ProductsReportsController@getproductsanalytics');
